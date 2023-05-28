@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingg</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="home.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+    <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
+
+</head>
+<body onload="initClock() ">  
+    <!--=== Sidebar ===-->
+    <section id="Home">
+        <div class="sidebar">
+            <div class="navigation ">
+                <ul>
+                    <li>
+                        <a href="#">
+                        <span class="icon"><i class="fas fa-user-circle"></i></span>
+                        <span class="tittle"><h2>alyaarana</h2></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Home">
+                        <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                        <span class="tittle">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Planet">
+                        <span class="icon"><i class="fas fa-folder"></i></span>
+                        <span class="tittle">Planet</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#komen">
+                        <span class="icon"><i class="fab fa-servicestack"></i></span>
+                        <span class="tittle">Comment</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle" onclick="toggleMenu();"></div>
+                    <div class="search" onclick="toogleMenu()">
+                        <form action="planet.html" id="aksi" method="get">
+                            <label onclick="search()">
+                                <input type="text" placeholder="Search here">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                            </label>
+                        </form>
+                        <script>
+                        function search(){
+                            const searchingengine = document.form('planet').querySelector('pencarian')
+                        }
+                    </script>
+                    </div>
+                    <div class="user">
+                        <img src="me.jpg">
+                        <span>alyaarana</span
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <script>
+            function toggleMenu(){
+                let toggle = document.querySelector('.toggle');
+                let navigation = document.querySelector('.navigation');
+                toggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </section>
+    <main>
+        <!--=== Landing Page ===-->
+        <div class="page">
+        
+            <row>
+                <div class="col-1">
+                    <h2>Hey you!!</h2>
+                    <h3>Explore your favorite planet in here</h3>
+                    <h4>The planets in our solar system didn’t appear out of nowhere. <br>Neither did the sun. <br>
+                        They were all part of a big cloud of gas and dust. Gravity collected lots of material in the center to create the sun. <br>
+                        The left over stuff swirled around the forming sun, colliding and collecting together.</h4>
+                    <div class="nasa"><a href="#Planet"><button type="button">EXPLORE HERE</button></a></div>
+                </div>
+                <div class="col-2">
+                    <img src="astronout.png" float="left" class="controller">
+                </div>
+              </div>
+            </row>
+        </div>
+      <img src="planet.png">
+    <!--=== Button Share ===-->
+    <!--=== Planet Section ===-->   
+    <section id="Planet"> 
+        <h2 align="center">Look at the planet</h2>
+        <div class="planet">
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="merkurius.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="merkurius.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Mercurius</div>
+                            <div class="text">The Basic</div>
+                            <div class="button"><a href="planet.html#mercury"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="venus.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="venus.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Venus</div>
+                            <div class="text">spins slowly in the opposite direction from most planets</div>
+                            <div class="button"><a href="planet.html#venus"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="bumi.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="bumi.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Earth</div>
+                            <div class="text"> only place in the universe known to harbor life</div>
+                            <div class="button"><a href="planet.html#earth"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="mars.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="mars.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Mars</div>
+                            <div class="text">a dusty, cold, desert world with a very thin atmosphere</div>
+                            <div class="button"><a href="planet.html#mars"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="jupiter.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="jupiter.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Jupiter</div>
+                            <div class="text">Jupiter has a long history of surprising scientists</div>
+                            <div class="button"><a href="planet.html#jupiter"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="saturnus.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="saturnus.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Saturn</div>
+                            <div class="text">the second-largest planet in our solar system</div>
+                            <div class="button"><a href="planet.html#saturn"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="uranus.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="uranus.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Uranus</div>
+                            <div class="text">has the third-largest diameter in our solar system</div>
+                            <div class="button"><a href="planet.html#uranus"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image">
+                <div class="icon">
+                    <img src="neptunus.png">
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="neptunus.png">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">neptunus</div>
+                            <div class="text">Dark, cold, and whipped by supersonic winds, ice giant</div>
+                            <div class="button"><a href="planet.html#neptunus"><button>Explore</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nasa"><a href="https://solarsystem.nasa.gov/planets/overview/"><button type="button">NASA</button></a></div>
+        </div>
+    </section>
+    <section id="komen">
+        <div class="card-comment">
+            <div class="commentbox">
+                <h3 align="center">Comment box</h3>
+           <form id="myForm">
+             Full name: <input id="userName" type="text" name="fname">
+             <br><br>
+             Email : <input id="userEmail" type="text" name="email">
+             <br><br>
+             <textarea id ="userComment" rows="4" cols="50" name="comment" placeholder="Comment here......"></textarea>
+             <br><br>
+             <input type="button" onclick="myFunction()" value="Submit">
+           </form>
+          <h5>Submitted data :</h5>
+          <p id="data"></p>
+          <script>
+             function myFunction(){
+              let data = "";  let name = document.getElementById("userName").value
+              let email = document.getElementById("userEmail").value
+              let comment = document.getElementById("userComment").value
+             
+             data = "User name : "+name+"<br/>User email : "+email+ "<br/>User comment : "+comment
+             
+             document.getElementById("data").innerHTML = data  // display data to paragraph
+             }
+          </script>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="bottom">
+          <p align="center">Copyright © 2023 <a href="#">alyaarana</a> All rights reserved</p>
+        </div>
+      </footer>
+     
+    <!--<footer>
+        <p>
+            Web Explore Solar System &copy; 2023,by alyaarana 
+        </p>
+    </footer>-->
+</body>
+</html>
